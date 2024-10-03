@@ -14,12 +14,14 @@ services:
     build: .
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    privileged: true
     tmpfs:
       - /tmp
       - /run
     volumes:
       - .:/workspace
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    
       
       # - ./build_output:/tmp/build_output
 # volumes:
