@@ -9,7 +9,7 @@
 #     container_name: car_thing_builder
 #     build: .
 services:
-  my-build-container:
+  my-systemd-playground:
     build: .
     stdin_open: true # docker run -i
     tty: true        # docker run -t
