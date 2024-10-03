@@ -48,7 +48,10 @@ COPY . /workspace
 WORKDIR /workspace
 VOLUME /workspace
 
-ENTRYPOINT ["/usr/lib/systemd/systemd"]
+VOLUME [ "/sys/fs/cgroup", "/tmp", "/run" ]
+CMD ["/sbin/init"]
+
+# ENTRYPOINT ["/usr/lib/systemd/systemd"]
 
 # # Print the UID and GID
 # CMD ["./build-in-docker.sh"]
