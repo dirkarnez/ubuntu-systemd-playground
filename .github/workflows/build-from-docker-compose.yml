@@ -1,6 +1,6 @@
 name: docker-compose-actions-workflow
 on:
-  push:
+  workflow_dispatch:
   
 permissions:
     contents: write
