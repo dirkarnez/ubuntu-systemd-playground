@@ -11,7 +11,7 @@
 # --tmpfs /tmp --tmpfs /run -v :
 services:
   my-systemd-playground:
-    build: .
+    image: robertdebock/ubuntu
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     privileged: true
