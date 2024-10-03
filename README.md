@@ -26,3 +26,4 @@ Not working yet
 - [修复 "System has not been booted with systemd as init system "的错误。 - A5互联 - 博客园](https://www.cnblogs.com/a5idc/p/13752839.html)
 - [Ubuntu 报错：System has not been booted with systemd as init system (PID 1). Can‘t operate.-CSDN博客](https://blog.csdn.net/weixin_46389691/article/details/133523514)
 - [[小抄] Docker 基本命令 | 想不起來而已](https://yingclin.github.io/2018/docker-basic.html)
+- [Systemd 入门教程：命令篇 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
