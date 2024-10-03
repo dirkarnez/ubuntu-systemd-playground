@@ -33,7 +33,7 @@ RUN apt-get -y --no-install-recommends --allow-unauthenticated install \
    make \
    bash \
    bc \
-   systemd
+   systemd 
 
 # # Create a custom user with UID 1234 and GID 1234
 # RUN groupadd -g 1234 customgroup && \
@@ -48,7 +48,7 @@ COPY . /workspace
 WORKDIR /workspace
 VOLUME /workspace
 
-CMD ["/usr/sbin/init"]
+ENTRYPOINT ["/usr/lib/systemd/systemd"]
 
 # # Print the UID and GID
 # CMD ["./build-in-docker.sh"]
