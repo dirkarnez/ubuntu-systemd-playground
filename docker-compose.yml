@@ -8,13 +8,19 @@
 #     image: bishopdynamics/car-thing-builder:latest
 #     container_name: car_thing_builder
 #     build: .
+# --tmpfs /tmp --tmpfs /run -v :
 services:
   my-systemd-playground:
     build: .
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    tmpfs:
+      - /tmp
+      - /run
     volumes:
       - .:/workspace
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      
       # - ./build_output:/tmp/build_output
 # volumes:
 #   workspace:
