@@ -19,6 +19,7 @@
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update
 RUN apt-get -y --no-install-recommends --allow-unauthenticated install \
    build-essential \
@@ -33,12 +34,12 @@ RUN apt-get -y --no-install-recommends --allow-unauthenticated install \
    bash \
    bc
 
-# Create a custom user with UID 1234 and GID 1234
-RUN groupadd -g 1234 customgroup && \
-    useradd -m -u 1234 -g customgroup customuser
+# # Create a custom user with UID 1234 and GID 1234
+# RUN groupadd -g 1234 customgroup && \
+#     useradd -m -u 1234 -g customgroup customuser
     
-# Switch to the custom user
-USER customuser
+# # Switch to the custom user
+# USER customuser
  
 RUN mkdir /workspace
 COPY . /workspace
@@ -46,8 +47,5 @@ COPY . /workspace
 WORKDIR /workspace
 VOLUME /workspace
 
-# Print the UID and GID
-CMD echo 'Inside Container:' && \
-   echo 'User: $(whoami) UID: $(id -u) GID: $(id -g)' && \
-   ls -la && \
-   ./build-in-docker.sh
+# # Print the UID and GID
+# CMD ["./build-in-docker.sh"]
