@@ -9,9 +9,11 @@
 #     container_name: car_thing_builder
 #     build: .
 # --tmpfs /tmp --tmpfs /run -v :
+
+
 services:
   my-systemd-playground:
-    image: robertdebock/ubuntu
+    build:  # robertdebock/ubuntu
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     privileged: true
