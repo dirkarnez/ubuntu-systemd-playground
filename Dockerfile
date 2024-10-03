@@ -48,5 +48,7 @@ COPY . /workspace
 WORKDIR /workspace
 VOLUME /workspace
 
+CMD ["/usr/sbin/init"]
+
 # # Print the UID and GID
 # CMD ["./build-in-docker.sh"]
