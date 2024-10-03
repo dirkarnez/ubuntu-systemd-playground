@@ -18,6 +18,7 @@ services:
     tmpfs:
       - /tmp
       - /run
+    command: /bin/bash
     volumes:
       - .:/workspace
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
