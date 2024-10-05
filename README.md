@@ -18,6 +18,7 @@ Not working yet
 - [eniocarboni/docker-ubuntu-systemd: Ubuntu LTS Docker container with systemd, useful for tests with ansible and molecule](https://github.com/eniocarboni/docker-ubuntu-systemd)
 - [jrei/systemd-ubuntu - Docker Image | Docker Hub](https://hub.docker.com/r/jrei/systemd-ubuntu)
 - [robertdebock/docker-ubuntu-systemd: Container to test Ansible roles in, including capabilities to use systemd facilities](https://github.com/robertdebock/docker-ubuntu-systemd)
+- [noobient/ansible-systemd: Docker images with systemd enablement to be used in Ansible Galaxy roles in GitHub Actions workflows](https://github.com/noobient/ansible-systemd)
 
 ### References
 - [Docker systemd进程管理器 — Cloud Atlas beta 文档](https://cloud-atlas.readthedocs.io/zh-cn/latest/docker/init/docker_systemd.html)
